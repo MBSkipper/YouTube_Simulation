@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YouTube Clone</title>
+    <title>YouTube simulation</title>
 
     <!--Bootstrap link-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
@@ -13,65 +13,20 @@
 
 </head>
 <body>
-    <!--IMPORTANT DISGUISE API KEY BEFORE COMMITTING TO PUBLIC REPOSITORY SEE BELOW html tag-->
-    <div class="container mt-5"><!-- start of container -->
+    <!--IMPORTANT DISGUISE API KEY BEFORE COMMITTING TO PUBLIC REPOSITORY SEE js script file line 2-->
+    <div class="container mt-5"> <!-- start of main container -->
         <div class="input-group mb-3"
         style="max-width: 500px; margin: auto;">
             <input type="text" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="button-addon2" id="search-text">
-            <button class="btn btn-outline-secondary" type="button" id="button-addon2" onclick="searchYTVideos()"><i class="fa-solid fa-magnifying-glass"></i></button>
+            <button class="btn btn-outline-secondary" type="button" id="button-addon2" onclick='searchYTVideos()'><i class="fa-solid fa-magnifying-glass"></i></button>
         </div>
 
-        <div class="row">
-            <div class = "col-xl-4 col-lg-6 col-md-12 text-center">
-                <!-- embedded video from YouTube-->
-                <iframe width="400" height="225" src="https://www.youtube.com/embed/BTMjD7_evjE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <!-- end of embedded video from YouTube-->
-            </div>
-            <div class = "col-xl-4 col-lg-6 col-md-12 text-center">
-                <!-- embedded video from YouTube-->
-                <iframe width="400" height="225" src="https://www.youtube.com/embed/BTMjD7_evjE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <!-- end of embedded video from YouTube-->
-            </div>
-            <div class = "col-xl-4 col-lg-6 col-md-12 text-center">
-                <!-- embedded video from YouTube-->
-                <iframe width="400" height="225" src="https://www.youtube.com/embed/BTMjD7_evjE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <!-- end of embedded video from YouTube-->
-            </div>
-            <div class = "col-xl-4 col-lg-6 col-md-12 text-center">
-                <!-- embedded video from YouTube-->
-                <iframe width="400" height="225" src="https://www.youtube.com/embed/BTMjD7_evjE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <!-- end of embedded video from YouTube-->
-            </div>
-            <div class = "col-xl-4 col-lg-6 col-md-12 text-center">
-                <!-- embedded video from YouTube-->
-                <iframe width="400" height="225" src="https://www.youtube.com/embed/BTMjD7_evjE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <!-- end of embedded video from YouTube-->
-            </div>
-            <div class = "col-xl-4 col-lg-6 col-md-12 text-center">
-                <!-- embedded video from YouTube-->
-                <iframe width="400" height="225" src="https://www.youtube.com/embed/BTMjD7_evjE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <!-- end of embedded video from YouTube-->
-            </div>
-
-                
-
-
-
-
-
-
-
-
-
-
-
+        <div class="row" id="videos-list"> <!-- start of videos list (row)-->
+            
             </div><!-- end of column -->
-        </div><!-- end of row-->
+        </div><!-- end of videos list (row)-->
 
-        
-
-
-    </div><!-- end of container -->
+    </div><!-- end of main container -->
 
     
     
@@ -86,8 +41,3 @@
 </body>
 </html>
 
-<!--
-API KEY:  AIzaSyB29kgNJO4VJkWo5-V6wyUn9YMOUA45riA
-
-
--->
