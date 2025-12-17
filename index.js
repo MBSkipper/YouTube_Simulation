@@ -1,11 +1,10 @@
  //IMPORTANT KEEP API KEY MUST BE PASTED BEFORE THIS CODE WILL WORK
-    const API_KEY
-     = ' '// Paste API key between the ' ' here
-
+ // Paste API key between the ' ' below
+    const API_KEY = 'AIzaSyB29kgNJO4VJkWo5-V6wyUn9YMOUA45riA'
 
 async function searchYTVideos() {
     const searchText = document.getElementById('search-text').value
-    const API_URL = `https://www.googleapis.com/youtube/v3/search?key=${API_KEY}&part=snippet&q=${searchText}&type=video&maxResults=22`
+    const API_URL = `https://www.googleapis.com/youtube/v3/search?key=${API_KEY}&part=snippet&q=${searchText}&type=video&maxResults=22&videoDuration=long`
     console.log(API_URL)
 
     try {

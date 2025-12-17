@@ -3,6 +3,25 @@ body {
     font-family: "Roboto", "Arial", sans-serif
 }
 
+/*
 #logo span {
     color: white
 }
+*/
+
+#search-field-wrapper {
+    min-width: 500px;  
+}
+
+@media screen and (max-width: 480px) {
+    #search-field-wrapper {
+        min-width: auto;
+    }
+}
+
+/* -- Replacing bootstrap class styles -- */
+
+.bg-body-tertiary {
+    background-color: #0F0F0F !important;
+}
+
